@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" x:DataType="colorconvertercrash:MainPageModel" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:colorconvertercrash="clr-namespace:ColorConverterCrash" mc:Ignorable="d" x:Class="ColorConverterCrash.MainPage">
+    <ContentPage.BindingContext>
+        <colorconvertercrash:MainPageModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <BoxView Color="{Binding MyColor}" />
+    </StackLayout>
+</ContentPage>
